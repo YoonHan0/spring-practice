@@ -25,6 +25,13 @@
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframewok-version}</version>
 		</dependency>
+		
+		<!-- spring aspect : Spring에서 AOP를 만들 때 도움이 되는 친구들-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${org.springframewok-version}</version>
+		</dependency>
 	</dependencies>
 	
 	<build>
