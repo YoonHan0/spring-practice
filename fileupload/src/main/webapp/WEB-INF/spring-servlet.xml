@@ -10,6 +10,8 @@
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
+	<mvc:annotation-driven />	<!-- mvc: ...> 을 사용하려면 이 친구가 있어야 함 -->
+	
 	<!-- Multipart Resolver -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<!-- 최대업로드 가능한 바이트크기 -->
@@ -21,6 +23,7 @@
 	</bean>
 	
 	<!--  mvc url-resource mapping : images로 들어오는 경로를 실제 경로로 연결 -->
+	<!-- /images/202302071405.png -> Users/yoon/fileupload-files/202302071405.png 이렇게 매핑되게 설정하고 코딩해야함-->
 	<mvc:resources mapping="/images/**" location="file:/Users/yoon/fileupload-files/"></mvc:resources>
 	
 	<context:annotation-config />
