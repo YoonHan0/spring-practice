@@ -3,9 +3,9 @@ package com.douzone.container.user.test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.douzone.container.config.user.AppConfig;
 import com.douzone.container.user.Friend;
 import com.douzone.container.user.User;
-import com.douzone.container.user.config.AppConfig;
 
 public class AppConfigTest {
 
