@@ -15,6 +15,7 @@ public class AppConfigTest {
 
 	private static void testAppConfig() {
 		ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+		
 		User user = ac.getBean(User.class);
 		System.out.println(user);
 		
