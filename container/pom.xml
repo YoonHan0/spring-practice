@@ -1,49 +1,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.douzone</groupId>
-    <artifactId>spring-practice</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>container</artifactId>
-  
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.douzone</groupId>
+		<artifactId>spring-practice</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>container</artifactId>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<org.springframework-version>5.3.25</org.springframework-version>
-		<jcloverslf4j.version>1.7.6</jcloverslf4j.version>		
-		<logback.version>1.1.1</logback.version>
-		
 	</properties>
-	
+
 	<dependencies>
 		<!-- spring context -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${org.springframework-version}</version>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>${org.springframework-version}</version>
 		</dependency>
-		
+	
 		<!-- spring test -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
-			<scope>test</scope>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${org.springframework-version}</version>
+		    <scope>test</scope>
 		</dependency>
 		
-		<!-- jUnit5(jupiter)-파이썬 그거 아님 -->
+		<!-- jUnit5(jupiter) 파이썬 그거 아님 -->
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
 		    <artifactId>junit-jupiter-api</artifactId>
 		    <version>5.9.1</version>
 		    <scope>test</scope>
 		</dependency>
+		
+		
 	</dependencies>
-	
+
 	<build>
 		<finalName>container</finalName>
-	</build>
+	</build>	
 </project>
