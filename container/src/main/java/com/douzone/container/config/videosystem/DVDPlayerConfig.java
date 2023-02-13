@@ -7,7 +7,7 @@ import com.douzone.container.videosystem.Avengers;
 import com.douzone.container.videosystem.DVDPlayer;
 import com.douzone.container.videosystem.DigitalVideoDisc;
 
-@Configuration
+@Configuration		// 이걸 붙혀야 di가 안됨 -> dvdPlayer01이 실행되면서 생성자(avengers())가 '또' 생성되지 않음(=실행되지 않음) 
 public class DVDPlayerConfig {
 
 	@Bean
@@ -18,7 +18,7 @@ public class DVDPlayerConfig {
 	// 주입하기(Injection) 1
 	// Bean 생성 메소드를 직접 호출하는 방법
 	// 생성자 주입
-	@Bean("dvdPlayer")		//이렇게 이름을 정할 수 있음 default값은 메소드 이름임 => Test에서 가져올 때 해당 이름을 사용해야함
+	@Bean("dvdPlayer")		//이렇게 이름을 정할 수 있음 default값은 메소드 이름임 => Test에서의 ID가 됨, 가져올 때 해당 이름을 사용해야함
 	public DVDPlayer dvdPlayer01() {
 		return new DVDPlayer(avengers());
 	}
